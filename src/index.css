@@ -3,3 +3,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.btn {
+  @apply px-6 py-3 inline-block bg-primary-default hover:bg-primary-light  font-semibold uppercase text-white;
+}
+.footer-contacts-list-item {
+  @apply flex;
+}
+.link {
+  @apply px-2 hover:text-primary-light;
+}
