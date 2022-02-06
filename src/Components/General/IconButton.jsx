@@ -2,7 +2,12 @@ import React from "react";
 
 function IconButton({ link, icon }) {
   return (
-    <a href={link} target="_blank" rel="noreferrer">
+    <a
+      className="bg-gray-900 hover:bg-primary-default p-3"
+      href={link}
+      target="_blank"
+      rel="noreferrer"
+    >
       {icon}
     </a>
   );

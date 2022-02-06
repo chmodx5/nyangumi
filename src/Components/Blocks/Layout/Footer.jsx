@@ -19,9 +19,10 @@ function Footer() {
         <div className="container mx-auto py-16">
           <div className="grid grid-cols-12 gap-5">
             <div className="col-span-4">
-              <h1>
-                <span>nya</span>ngumi
+              <h1 className=" uppercase text-2xl font-bold mb-8">
+                <span className=" text-primary-default">nya</span>ngumi
               </h1>
+
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
                 excepturi saepe incidunt. Eveniet vel assumenda distinctio
