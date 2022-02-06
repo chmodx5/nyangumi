@@ -29,7 +29,7 @@ function Footer() {
                 recusandae vero! Possimus deserunt dolor ut. Quisquam nobis nam
                 aperiam id placeat possimus aliquam?
               </p>
-              <div className="flex gap-5">
+              <div className="flex gap-5 mt-12">
                 <IconButton icon={<BsInstagram />} />
                 <IconButton icon={<BsTwitter />} />
                 <IconButton icon={<FaPinterestP />} />
