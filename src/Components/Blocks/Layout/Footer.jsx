@@ -100,7 +100,7 @@ function Footer() {
       <div className="bg-gray-900 text-white py-8">
         <div className="container mx-auto">
           <div className="grid grid-cols-12 gap-y-5">
-            <div className=" col-span-12 md:col-span-4 flex md:justify-end justify-center">
+            <div className=" col-span-12 md:col-span-4 flex md:justify-start justify-center">
               © 2021 Dabble Inc. All Rights Reserved.
             </div>
             <div className="col-span-12 md:col-span-8 flex md:justify-end justify-center">
