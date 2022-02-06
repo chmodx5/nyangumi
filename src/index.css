@@ -11,5 +11,5 @@
   @apply flex;
 }
 .link {
-  @apply px-2 hover:text-primary-light;
+  @apply hover:text-primary-light;
 }

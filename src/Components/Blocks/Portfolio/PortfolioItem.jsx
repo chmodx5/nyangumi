@@ -16,7 +16,7 @@ export default function PortfolioItem({
 }) {
   const BgImageContainer = ({ img, children }) => {
     return (
-      <div className="relative group">
+      <div className={`relative group`}>
         <div
           className={`aspect-square bg-slate-400  bg-center bg-cover bg-no-repeat group`}
           style={{ backgroundImage: `url('${img}')` }}
@@ -55,7 +55,7 @@ export default function PortfolioItem({
   } else if (styleTwo) {
     return (
       <BgImageContainer img={img}>
-        <div className="absolute top-0 left-0 w-full h-full bg-primary-default/0 group-hover:bg-primary-default/80 flex flex-col justify-end px-10 pb-14">
+        <div className="absolute top-0 left-0 w-full h-full bg-primary-default/0 group-hover:bg-primary-default/80 flex flex-col justify-end px-10 pb-14 ">
           <div className="text-white hidden group-hover:block mb-4">
             <h5 className="capitalize font-bold text-xl">{title}</h5>
             <p>{category}</p>
@@ -67,7 +67,22 @@ export default function PortfolioItem({
       </BgImageContainer>
     );
   } else if (styleThree) {
-    return <BgImageContainer img={img}></BgImageContainer>;
+    return (
+      <div className=" aspect-square relative group overflow-hidden">
+        <div
+          className={`absolute h-full w-full  group-hover:scale-150 bg-center bg-cover bg-no-repeat group`}
+          style={{ backgroundImage: `url('${img}')` }}
+        ></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-primary-default/0 group-hover:bg-gray-900/80 flex flex-col justify-end p-8 ">
+          <div className="text-white hidden group-hover:block">
+            <Link to={link} className="capitalize font-bold text-xl link">
+              {title}
+            </Link>
+            <p>{category}</p>
+          </div>
+        </div>
+      </div>
+    );
   } else if (styleFour) {
     return <BgImageContainer img={img}></BgImageContainer>;
   } else if (styleFive) {
