@@ -4,7 +4,7 @@ import NavLink from "./NavLink";
 
 function Header() {
   return (
-    <nav className=" shadow-lg fixed bg-white w-full ">
+    <nav className=" shadow-lg fixed bg-white w-full z-50">
       <div className="container mx-auto px-2 sm:px-6 lg:px-8">
         <div className="relative flex items-center justify-between h-20">
           <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-between">
