@@ -84,7 +84,22 @@ export default function PortfolioItem({
       </div>
     );
   } else if (styleFour) {
-    return <BgImageContainer img={img}></BgImageContainer>;
+    return (
+      <div className=" aspect-square relative group overflow-hidden">
+        <div
+          className={`absolute h-full w-full  group-hover:scale-150 bg-center bg-cover bg-no-repeat group`}
+          style={{ backgroundImage: `url('${img}')` }}
+        ></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-primary-default/0 group-hover:bg-gray-900/80 flex flex-col justify-center items-center p-8 ">
+          <div className="text-white hidden group-hover:block">
+            <Link to={link} className="capitalize font-bold text-xl link">
+              {title}
+            </Link>
+            <p>{category}</p>
+          </div>
+        </div>
+      </div>
+    );
   } else if (styleFive) {
     return <BgImageContainer img={img}></BgImageContainer>;
   } else if (styleSix) {
