@@ -9,10 +9,10 @@ export default function AboutBlockWithSliders() {
       <div className="container mx-auto">
         <div className="grid grid-cols-12 gap-5">
           <div className="col-span-12 md:col-span-6">
-            <p className="text-primary-default uppercase mb-5">about me</p>
             <HeadingWithEffect
               large
               title="I’m a Passionate Expert Web Developer From USA"
+              subtitle="about me"
             />
             <br /> <br />
             <div>

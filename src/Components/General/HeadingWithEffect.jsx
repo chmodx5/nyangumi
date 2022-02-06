@@ -1,8 +1,20 @@
 import React from "react";
 
-function HeadingWithEffect({ title, large, centered }) {
+function HeadingWithEffect({ title, large, centered, subtitle }) {
   return (
     <div className=" group ">
+      {subtitle ? (
+        <p
+          className={`uppercase text-primary-default font-semibold mb-4 ${
+            centered ? "text-center" : ""
+          } `}
+        >
+          {subtitle}
+        </p>
+      ) : (
+        ""
+      )}
+
       <h2
         className={`uppercase font-bold ${large ? "text-3xl" : "text-xl"} ${
           centered ? "text-center" : ""
