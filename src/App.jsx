@@ -1,9 +1,13 @@
 import Button from "./Components/General/Button";
+import { Routes, Route } from "react-router-dom";
+import Main from "./Pages/Main";
+
 function App() {
   return (
     <div className="App">
-      <p className="text-4xl">hello world</p>
-      <Button link="/" text="hahaha" />
+      <Routes>
+        <Route path="/" element={<Main />} />
+      </Routes>
     </div>
   );
 }
