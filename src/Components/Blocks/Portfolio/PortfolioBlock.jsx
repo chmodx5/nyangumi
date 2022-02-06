@@ -52,10 +52,11 @@ export default function PortfolioBlock() {
         />
         <br />
         <br />
-        <div className="grid grid-cols-12 gap-6">
+        <div className="grid grid-cols-12 gap-6 ">
           {portfolioItems.map((item, index) => (
-            <div className="col-span-4">
+            <div className="col-span-12 sm:col-span-6 md:col-span-4">
               <PortfolioItem
+                styleOne
                 key={index}
                 category={item.category}
                 title={item.title}
