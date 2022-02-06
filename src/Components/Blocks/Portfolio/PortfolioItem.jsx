@@ -53,7 +53,19 @@ export default function PortfolioItem({
       </BgImageContainer>
     );
   } else if (styleTwo) {
-    return <BgImageContainer img={img}></BgImageContainer>;
+    return (
+      <BgImageContainer img={img}>
+        <div className="absolute top-0 left-0 w-full h-full bg-primary-default/0 group-hover:bg-primary-default/80 flex flex-col justify-end px-10 pb-14">
+          <div className="text-white hidden group-hover:block mb-4">
+            <h5 className="capitalize font-bold text-xl">{title}</h5>
+            <p>{category}</p>
+          </div>
+          <div className="">
+            <IconLink link={link} />
+          </div>
+        </div>
+      </BgImageContainer>
+    );
   } else if (styleThree) {
     return <BgImageContainer img={img}></BgImageContainer>;
   } else if (styleFour) {
