@@ -8,6 +8,9 @@ module.exports = {
           light: "#9d0208",
         },
       },
+      fontFamily: {
+        sans: ["Montserrat", "sans-serif"],
+      },
     },
   },
   plugins: [],
