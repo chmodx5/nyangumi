@@ -4,11 +4,11 @@ import Header from "../Blocks/Layout/Header";
 
 function MainLayout({ children }) {
   return (
-    <div>
+    <main className="h-screen flex flex-col justify-between">
       <Header />
-      <main>{children}</main>
+      <main className="mt-20 flex-1 bg-red-400">{children}</main>
       <Footer />
-    </div>
+    </main>
   );
 }
 
