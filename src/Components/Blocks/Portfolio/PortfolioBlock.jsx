@@ -56,7 +56,7 @@ export default function PortfolioBlock() {
           {portfolioItems.map((item, index) => (
             <div className="col-span-12 sm:col-span-6 md:col-span-4">
               <PortfolioItem
-                styleFour
+                styleFive
                 key={index}
                 category={item.category}
                 title={item.title}
