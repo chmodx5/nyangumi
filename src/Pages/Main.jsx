@@ -1,15 +1,13 @@
 import React from "react";
 import MainLayout from "../Components/Layouts/MainLayout";
+import AboutBlockWithSliders from "../Components/Blocks/About/AboutBlockWithSliders";
+import ServicesBlock from "../Components/Blocks/Services/ServicesBlock";
 
 function Main() {
   return (
     <MainLayout>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aliquam
-        laudantium consectetur, in porro itaque reprehenderit laboriosam rerum
-        deleniti accusantium repellat quo voluptatum, sit quasi sint quas, et ut
-        distinctio?
-      </p>
+      <ServicesBlock />
+      <AboutBlockWithSliders />
     </MainLayout>
   );
 }
