@@ -5,7 +5,7 @@ export default function BlogPostCard() {
   return (
     <div className="w-full bg-primary-default/5">
       <div className="aspect-video w-full bg-[url('https://source.unsplash.com/random')]"></div>
-      <div className="p-10">
+      <div className="px-6 py-10">
         <div className="flex gap-5">
           <span> 05 May 2022</span>
           <span>/</span>
