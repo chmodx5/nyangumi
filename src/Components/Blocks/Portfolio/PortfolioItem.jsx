@@ -118,7 +118,18 @@ export default function PortfolioItem({
       </div>
     );
   } else if (styleSix) {
-    return <BgImageContainer img={img}></BgImageContainer>;
+    return (
+      <BgImageContainer img={img}>
+        <div className="absolute bottom-0 w-full p-8 hidden group-hover:block">
+          <div className="bg-white p-5 pt-8">
+            <Link to={link} className="capitalize font-bold text-xl link">
+              {title}
+            </Link>
+            <p>{category}</p>
+          </div>
+        </div>
+      </BgImageContainer>
+    );
   } else {
     return (
       <div
