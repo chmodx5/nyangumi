@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar";
 import Footer from "./../../components/Footer/Footer";
+import NavLink from "./../Navbar/NavLink";
 
 export default function MainLayout({ children }) {
   return (
@@ -13,7 +14,11 @@ export default function MainLayout({ children }) {
               <span>ngumi</span>
             </span>
           }
-          navitems={<p>nav items</p>}
+          navitems={
+            <>
+              <NavLink link="/" text="Home" />
+            </>
+          }
         />
       </header>
       <main className=" flex-1 mt-20">{children}</main>
