@@ -5,6 +5,7 @@ import PortfolioBlock from "../../Components/Blocks/Portfolio/PortfolioBlock";
 import PaymentBlock from "../../Components/Blocks/Payment/PaymentBlock";
 import Hero from "../../Components/Blocks/Hero/Hero";
 import BlogBlock from "../../components/Blocks/Blog/BlogBlock";
+import DeveloperPortfolioLayout from "./../../components/layout/DeveloperPortfolioLayout";
 
 function Home() {
   return (
@@ -18,5 +19,8 @@ function Home() {
     </>
   );
 }
+Home.getLayout = function getLayout(page) {
+  return <DeveloperPortfolioLayout>{page}</DeveloperPortfolioLayout>;
+};
 
 export default Home;

@@ -1,4 +1,5 @@
 import React from "react";
+import ShopLayout from "./../../components/layout/ShopLayout";
 
 function Home() {
   return (
@@ -7,5 +8,9 @@ function Home() {
     </div>
   );
 }
+
+Home.getLayout = function getLayout(page) {
+  return <ShopLayout>{page}</ShopLayout>;
+};
 
 export default Home;
