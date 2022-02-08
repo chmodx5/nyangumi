@@ -1,6 +1,6 @@
 import React from "react";
 import { GoPlus } from "react-icons/go";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 export default function PortfolioItem({
   category,
@@ -28,7 +28,7 @@ export default function PortfolioItem({
 
   const IconLink = ({ link, color }) => {
     return (
-      <Link to={link}>
+      <Link href={link} passHref>
         <div
           className={`${
             color ? color : "bg-gray-900"
@@ -75,7 +75,11 @@ export default function PortfolioItem({
         ></div>
         <div className="absolute top-0 left-0 w-full h-full bg-primary-default/0 group-hover:bg-gray-900/80 flex flex-col justify-end p-8 ">
           <div className="text-white hidden group-hover:block">
-            <Link to={link} className="capitalize font-bold text-xl link">
+            <Link
+              Href={link}
+              passHref
+              className="capitalize font-bold text-xl link"
+            >
               {title}
             </Link>
             <p>{category}</p>
@@ -92,7 +96,11 @@ export default function PortfolioItem({
         ></div>
         <div className="absolute top-0 left-0 w-full h-full bg-primary-default/0 group-hover:bg-gray-900/80 flex flex-col justify-center items-center p-8 ">
           <div className="text-white hidden group-hover:block">
-            <Link to={link} className="capitalize font-bold text-xl link">
+            <Link
+              href={link}
+              passHref
+              className="capitalize font-bold text-xl link"
+            >
               {title}
             </Link>
             <p>{category}</p>
@@ -109,7 +117,11 @@ export default function PortfolioItem({
         ></div>
         <div className="absolute top-0 left-0 w-full h-full bg-gray-900/50  flex flex-col justify-end  p-8 ">
           <div className="text-white group-hover:-translate-y-6">
-            <Link to={link} className="capitalize font-bold text-xl link">
+            <Link
+              href={link}
+              passHref
+              className="capitalize font-bold text-xl link"
+            >
               {title}
             </Link>
             <p>{category}</p>
@@ -122,7 +134,11 @@ export default function PortfolioItem({
       <BgImageContainer img={img}>
         <div className="absolute bottom-0 w-full p-8 hidden group-hover:block">
           <div className="bg-white p-5 pt-8">
-            <Link to={link} className="capitalize font-bold text-xl link">
+            <Link
+              href={link}
+              passHref
+              className="capitalize font-bold text-xl link"
+            >
               {title}
             </Link>
             <p>{category}</p>
@@ -137,7 +153,7 @@ export default function PortfolioItem({
         style={{ backgroundImage: `url('${img}')` }}
       >
         <div className=" absolute w-full h-full bg-gradient-to-b from-primary-default to-primary-light opacity-0 group-hover:opacity-80"></div>
-        <Link to={link}>
+        <Link href={link} passHref>
           <div className="absolute w-12 h-12 rounded-full bg-gray-900 right-7 top-7 flex justify-center items-center opacity-0 group-hover:opacity-100">
             <GoPlus className="text-white text-2xl" />
           </div>

@@ -1,7 +1,6 @@
 import React from "react";
 import { TiTick, TiTimes } from "react-icons/ti";
 import Button from "./../../General/Button";
-import "./styles.css";
 
 export default function PaymentBlockItem({
   packagename,
@@ -25,7 +24,7 @@ export default function PaymentBlockItem({
 
       <ul className="mt-10 mb-16">
         {features.map((feature, index) => (
-          <li className="payment-features-list-item">
+          <li className="payment-features-list-item" key={index}>
             {feature.available ? <TiTick /> : <TiTimes />}
 
             <p>{feature.name}</p>

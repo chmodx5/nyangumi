@@ -8,9 +8,9 @@ import {
 } from "react-icons/fa";
 import { AiOutlineFieldTime } from "react-icons/ai";
 import { HiOutlineLocationMarker } from "react-icons/hi";
-import { Link } from "react-router-dom";
-import IconButton from "../../General/IconButton";
-import HeadingWithEffect from "../../General/HeadingWithEffect";
+import Link from "next/link";
+import IconButton from "../General/IconButton";
+import HeadingWithEffect from "../General/HeadingWithEffect";
 import FooterContactListItem from "./FooterContactListItem";
 
 function Footer() {
@@ -104,15 +104,15 @@ function Footer() {
               © 2021 Dabble Inc. All Rights Reserved.
             </div>
             <div className="col-span-12 md:col-span-8 flex md:justify-end justify-center">
-              <div className="flex divide-x divide-blue-200">
+              <div className="flex divide-blue-200 gap-6">
                 {/* to finish the styling of this links in the css file */}
-                <Link to="/" className="link">
+                <Link passHref href="/" className="link">
                   Home
                 </Link>
-                <Link to="/about" className="link">
+                <Link passHref href="/about" className="link">
                   About
                 </Link>
-                <Link to="/contact" className="link">
+                <Link passHref href="/contact" className="link">
                   Contact
                 </Link>
               </div>
