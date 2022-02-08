@@ -10,7 +10,14 @@ import DeveloperPortfolioLayout from "./../../components/layout/DeveloperPortfol
 function Home() {
   return (
     <>
-      <Hero />
+      <Hero
+        smalltitle="Hello I&lsquo;m"
+        title="someone awesome"
+        subtitle="a web developer"
+        desc="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod deserunt illo asperiores tempora, dolor repellendus repellate  dolor repellendus repellate  dolor repellendus repellate "
+        buttonlink="/"
+        buttontext="discover more"
+      />
       <ServicesBlock />
       <AboutBlockWithSliders />
       <PortfolioBlock />

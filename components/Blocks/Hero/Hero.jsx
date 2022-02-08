@@ -15,6 +15,7 @@ export default function Hero({
         <div className="mycontainer mx-auto grid grid-cols-12 h-full w-full">
           <div className="order-2 md:order-1 col-span-12 md:col-span-7 flex items-center h-full w-full">
             <div className="text-white w-full  pb-20 md:pb-0">
+              {/* the small title with tu icons on top  */}
               {smalltitle ? (
                 <>
                   <div>
@@ -24,7 +25,7 @@ export default function Hero({
                       ))}
                     </div>
                   </div>
-                  <p className="font-bold mb-6">Hello I&lsquo;m</p>
+                  <p className="font-bold mb-6">{smalltitle}</p>
                 </>
               ) : (
                 <>{smalltitle}</>
