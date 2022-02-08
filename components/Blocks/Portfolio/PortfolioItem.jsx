@@ -1,6 +1,7 @@
 import React from "react";
 import { GoPlus } from "react-icons/go";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function PortfolioItem({
   category,
@@ -18,9 +19,19 @@ export default function PortfolioItem({
     return (
       <div className={`relative group`}>
         <div
-          className={`aspect-square bg-slate-400  bg-center bg-cover bg-no-repeat group`}
+          className={`aspect-1 bg-slate-400  bg-center bg-cover bg-no-repeat group`}
           style={{ backgroundImage: `url('${img}')` }}
-        ></div>
+        >
+          <div className="bg-blue-300 aspect-w-1 aspect-h-1">
+            <Image
+              src={img}
+              alt={title}
+              className="w-full h-full object-center object-cover "
+              layout="fill"
+              priority
+            />
+          </div>
+        </div>
         {children}
       </div>
     );
