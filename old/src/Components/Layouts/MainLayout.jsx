@@ -1,6 +1,6 @@
 import React from "react";
-import Footer from "../Blocks/Layout/Footer";
-import Header from "../Blocks/Layout/Header";
+import Footer from "../../../../components/Blocks/Layout/Footer";
+import Header from "../../../../components/Blocks/Layout/Header";
 
 function MainLayout({ children }) {
   return (
