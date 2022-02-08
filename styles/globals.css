@@ -13,3 +13,6 @@
 .link {
   @apply hover:text-primary-light;
 }
+.mycontainer {
+  @apply container mx-auto px-4 sm:px-2 md:px-0;
+}

@@ -36,7 +36,7 @@ export default function Home() {
           <span className="text-primary-default"> Unique </span>
           Demo Home Pages
         </h2>
-        <div className="container mx-auto grid grid-cols-3 gap-6">
+        <div className="container mx-auto grid grid-cols-1 md:cols-3 gap-6">
           {pages.map((page, index) => (
             <div key={index} className=" w-full shadow-md hover:shadow-xl">
               <div className="bg-blue-300 aspect-w-1 aspect-h-1">
