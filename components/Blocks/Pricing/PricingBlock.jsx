@@ -1,6 +1,6 @@
 import React from "react";
-import PaymentBlockItem from "./PaymentBlockItem";
-import HeadingWithEffect from "./../../General/HeadingWithEffect";
+import PricingBlockItem from "./PricingBlockItem";
+import HeadingWithEffect from "../../General/HeadingWithEffect";
 
 export default function PaymentBlock() {
   const paymentBlockItems = [
@@ -74,13 +74,13 @@ export default function PaymentBlock() {
   ];
   return (
     <div className="py-20">
-      <div className="container mx-auto">
+      <div className="mycontainer">
         <HeadingWithEffect centered title="pricing plans" large />
         <br />
         <br />
-        <div className="grid grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-6">
           {paymentBlockItems.map((paymentBlockItem, index) => (
-            <PaymentBlockItem
+            <PricingBlockItem
               key={index}
               featured={paymentBlockItem.featured}
               packagename={paymentBlockItem.package}
