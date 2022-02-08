@@ -5,7 +5,7 @@ import BlogPostCard from "./BlogPostCard";
 
 export default function BlogBlock() {
   return (
-    <div>
+    <div className="py-20">
       <div className="container mx-auto grid grid-cols-12 gap-5">
         <div className="col-span-12 md:col-span-4">
           <div className="bg-gray-900 text-white px-14 py-16 w-full">
