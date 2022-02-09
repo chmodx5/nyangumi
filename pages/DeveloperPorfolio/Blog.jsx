@@ -1,15 +1,14 @@
 import React from "react";
-import AboutBlockOne from "../../components/Blocks/About/AboutBlockOne";
 import DeveloperPortfolioLayout from "../../components/layout/DeveloperPortfolioLayout";
 
-export default function About() {
+export default function Blog() {
   return (
     <div>
-      <AboutBlockOne />
+      <h1 className="text-8xl font-bold">Blog</h1>
     </div>
   );
 }
 
-About.getLayout = function getLayout(page) {
+Blog.getLayout = function getLayout(page) {
   return <DeveloperPortfolioLayout>{page}</DeveloperPortfolioLayout>;
 };

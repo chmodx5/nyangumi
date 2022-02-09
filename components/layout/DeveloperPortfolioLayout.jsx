@@ -20,6 +20,7 @@ export default function DeveloperPortfolioLayout({ children }) {
               <NavLink link="/DeveloperPorfolio/About" text="About" />
               <NavLink link="/DeveloperPorfolio/Portfolio" text="Portfolio" />
               <NavLink link="/DeveloperPorfolio/Contact" text="Contact" />
+              <NavLink link="/DeveloperPorfolio/Blog" text="Blog" />
             </>
           }
         />
