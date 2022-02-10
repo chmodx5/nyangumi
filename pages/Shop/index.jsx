@@ -1,10 +1,11 @@
 import React from "react";
 import ShopLayout from "./../../components/layout/ShopLayout";
+import FeaturedCategoriesBlock from "../../components/Blocks/FeaturedCategories/FeaturedCategoriesBlock";
 
 function Home() {
   return (
     <div>
-      <h1 className="text-8xl font-bold">shop home</h1>
+      <FeaturedCategoriesBlock />
     </div>
   );
 }
