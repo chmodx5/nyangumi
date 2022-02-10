@@ -4,6 +4,7 @@ import FeaturedCategoriesBlock from "../../components/Blocks/Shop/FeaturedCatego
 
 import PopularProductsBlock from "../../components/Blocks/Shop/Products/PopularProductsBlock";
 import BestSellers from "../../components/Blocks/Shop/Products/BestSellers";
+import DealsBlock from "../../components/Blocks/Shop/Products/DealsBlock";
 
 function Home() {
   return (
@@ -11,6 +12,7 @@ function Home() {
       <FeaturedCategoriesBlock />
       <PopularProductsBlock />
       <BestSellers />
+      <DealsBlock />
     </div>
   );
 }

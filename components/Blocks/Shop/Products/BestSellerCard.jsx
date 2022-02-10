@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function BestSellerCard() {
   return (
-    <div>
+    <div className="border border-gray-300 ">
       <div>
         <div className="bg-blue-300 relative aspect-w-1 aspect-h-1">
           <Image
@@ -19,7 +19,7 @@ export default function BestSellerCard() {
           />
         </div>
       </div>
-      <div>
+      <div className="p-2">
         <small className=" capitalize text-gray-400">someone foods</small>
         <p className="font-bold ">Blue seeds of change sweet and wommies</p>
         <Rating rating="3" numReviews="4" />
