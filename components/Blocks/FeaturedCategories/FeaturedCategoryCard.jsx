@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function FeaturedCategoryCard() {
   return (
-    <div className=" w-40 shadow-md hover:shadow-xl border border-gray-200 group ">
+    <div className=" w-28 shadow-md hover:shadow-xl border border-gray-200 group ">
       <div>
         <div className="bg-blue-300 aspect-w-1 aspect-h-1">
           <Image
