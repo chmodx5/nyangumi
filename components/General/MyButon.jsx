@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function MyButon({ size, icon, text, link }) {
+export default function MyButon({ size, icon, text, link, clicked }) {
   if (icon && text) {
     return (
       <button
@@ -21,6 +21,7 @@ export default function MyButon({ size, icon, text, link }) {
   if (icon) {
     return (
       <button
+        onClick={clicked}
         className={`  ${
           size == "sm"
             ? "h-7 w-7"
