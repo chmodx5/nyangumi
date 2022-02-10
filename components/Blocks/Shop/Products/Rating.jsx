@@ -5,39 +5,39 @@ function Rating({ rating, numReviews }) {
   return (
     <div className="flex items-center">
       {rating >= 1 ? (
-        <ImStarFull className=" text-primary-default" />
+        <ImStarFull className=" text-secondary-default text-xs" />
       ) : rating >= 0.5 ? (
-        <ImStarHalf className=" text-primary-default" />
+        <ImStarHalf className=" text-secondary-default text-xs" />
       ) : (
-        <ImStarEmpty className=" text-primary-default" />
+        <ImStarEmpty className=" text-secondary-default text-xs" />
       )}
       {rating >= 2 ? (
-        <ImStarFull className=" text-primary-default" />
+        <ImStarFull className=" text-secondary-default text-xs" />
       ) : rating >= 1.5 ? (
-        <ImStarHalf className=" text-primary-default" />
+        <ImStarHalf className=" text-secondary-default text-xs" />
       ) : (
-        <ImStarEmpty className=" text-primary-default" />
+        <ImStarEmpty className=" text-secondary-default text-xs" />
       )}
       {rating >= 3 ? (
-        <ImStarFull className=" text-primary-default" />
+        <ImStarFull className=" text-secondary-default text-xs" />
       ) : rating >= 2.5 ? (
         <ImStarHalf />
       ) : (
-        <ImStarEmpty className=" text-primary-default" />
+        <ImStarEmpty className=" text-secondary-default text-xs" />
       )}
       {rating >= 4 ? (
-        <ImStarFull className=" text-primary-default" />
+        <ImStarFull className=" text-secondary-default text-xs" />
       ) : rating >= 3.5 ? (
-        <ImStarHalf className=" text-primary-default" />
+        <ImStarHalf className=" text-secondary-default text-xs" />
       ) : (
-        <ImStarEmpty className=" text-primary-default" />
+        <ImStarEmpty className=" text-secondary-default text-xs" />
       )}
       {rating >= 5 ? (
-        <ImStarFull className=" text-primary-default" />
+        <ImStarFull className=" text-secondary-default text-xs" />
       ) : rating >= 4.5 ? (
-        <ImStarHalf className=" text-primary-default" />
+        <ImStarHalf className=" text-secondary-default text-xs" />
       ) : (
-        <ImStarEmpty className=" text-primary-default" />
+        <ImStarEmpty className=" text-secondary-default text-xs" />
       )}
 
       <small className=" ml-4 text-xs">{numReviews} Reviews</small>

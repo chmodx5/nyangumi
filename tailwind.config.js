@@ -10,6 +10,9 @@ module.exports = {
           default: "#d00000",
           light: "#9d0208",
         },
+        secondary: {
+          default: "#ffd700",
+        },
       },
       fontFamily: {
         sans: ["Montserrat", "sans-serif"],

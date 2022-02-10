@@ -2,13 +2,15 @@ import React from "react";
 import ShopLayout from "./../../components/layout/ShopLayout";
 import FeaturedCategoriesBlock from "../../components/Blocks/Shop/FeaturedCategories/FeaturedCategoriesBlock";
 
-import PopularProducts from "../../components/Blocks/Shop/Products/PopularProducts";
+import PopularProductsBlock from "../../components/Blocks/Shop/Products/PopularProductsBlock";
+import BestSellers from "../../components/Blocks/Shop/Products/BestSellers";
 
 function Home() {
   return (
     <div>
       <FeaturedCategoriesBlock />
-      <PopularProducts />
+      <PopularProductsBlock />
+      <BestSellers />
     </div>
   );
 }
