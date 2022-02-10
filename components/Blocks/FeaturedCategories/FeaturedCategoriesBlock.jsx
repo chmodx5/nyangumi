@@ -4,6 +4,8 @@ import FeaturedCategoryCard from "./FeaturedCategoryCard";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import MyButon from "../../General/MyButon";
+import { FaTimes } from "react-icons/fa";
 
 export default function FeaturedCategoriesBlock() {
   const settings = {
@@ -61,19 +63,8 @@ export default function FeaturedCategoriesBlock() {
             <HeadingWithEffect large title="featured categories" />
           </div>
 
-          <div className=" gap-5">
-            <button
-              //     onClick={next}
-              className=" bg-primary-default text-white px-4 py-2"
-            >
-              next
-            </button>
-            <button
-              //     onClick={back}
-              className=" bg-primary-default text-white px-4 py-2"
-            >
-              prev
-            </button>
+          <div className="flex justify-center items-center gap-5">
+            <MyButon size="sm" icon={<FaTimes />} />
           </div>
         </div>
         {/* <div className="flex gap-6 flex-wrap mt-6">
