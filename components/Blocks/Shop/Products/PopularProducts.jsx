@@ -6,12 +6,12 @@ export default function PopularProducts() {
   return (
     <section className="py-10">
       <div className="mycontainer">
-        <div className="">
+        <div className="mb-10">
           <HeadingWithEffect large title="popular products" />
         </div>
         <div className="grid grid-cols-12 gap-4">
           {Array.from({ length: 18 }, (_, i) => (
-            <div className="col-span-2">
+            <div className="col-span-3">
               <ProductCard />
             </div>
           ))}
