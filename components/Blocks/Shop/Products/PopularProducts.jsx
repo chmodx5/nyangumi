@@ -10,7 +10,7 @@ export default function PopularProducts() {
           <HeadingWithEffect large title="popular products" />
         </div>
         <div className="grid grid-cols-12 gap-4">
-          {Array.from({ length: 18 }, (_, i) => (
+          {Array.from({ length: 12 }, (_, i) => (
             <div className="col-span-3">
               <ProductCard />
             </div>
