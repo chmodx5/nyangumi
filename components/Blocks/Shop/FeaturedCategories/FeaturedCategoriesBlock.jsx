@@ -1,10 +1,10 @@
 import React, { useRef } from "react";
-import HeadingWithEffect from "../../General/HeadingWithEffect";
+import HeadingWithEffect from "../../../General/HeadingWithEffect";
 import FeaturedCategoryCard from "./FeaturedCategoryCard";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import MyButon from "../../General/MyButon";
+import MyButon from "../../../General/MyButon";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 
 export default function FeaturedCategoriesBlock() {
