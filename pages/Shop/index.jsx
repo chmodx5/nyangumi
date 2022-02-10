@@ -6,6 +6,7 @@ import PopularProductsBlock from "../../components/Blocks/Shop/Products/PopularP
 import BestSellers from "../../components/Blocks/Shop/Products/BestSellers";
 import DealsBlock from "../../components/Blocks/Shop/Products/DealsBlock";
 import MoreProductsBlock from "../../components/Blocks/Shop/Products/MoreProductsBlock";
+import StoreServicesBlock from "../../components/Blocks/Shop/Products/StoreServicesBlock";
 
 function Home() {
   return (
@@ -15,6 +16,7 @@ function Home() {
       <BestSellers />
       <DealsBlock />
       <MoreProductsBlock />
+      <StoreServicesBlock />
     </div>
   );
 }
