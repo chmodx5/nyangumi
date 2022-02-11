@@ -12,7 +12,7 @@ export default function FeaturedCategoriesBlock() {
     console.log("clucked");
   };
   return (
-    <section className="py-20">
+    <section className="py-10">
       <div className="mycontainer">
         <div className="flex justify-between items-end mb-10 gap-10">
           <div className="">

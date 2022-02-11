@@ -9,9 +9,9 @@ export default function PopularProducts() {
         <div className="mb-10">
           <HeadingWithEffect large title="popular products" />
         </div>
-        <div className="grid grid-cols-12 gap-4">
+        <div className="grid grid-cols-10 gap-4">
           {Array.from({ length: 12 }, (_, i) => (
-            <div className="col-span-3">
+            <div className="col-span-2">
               <ProductCard />
             </div>
           ))}
