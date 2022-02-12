@@ -1,5 +1,5 @@
 import React from "react";
-import ImageContainer from "../../../General/ImageContainer";
+
 import { FiShoppingCart } from "react-icons/fi";
 import Image from "next/image";
 import Rating from "./Rating";
