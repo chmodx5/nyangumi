@@ -9,6 +9,7 @@ export default function Hero({
   buttonlink,
   buttontext,
   bgimage,
+  featuredimage,
 }) {
   return (
     <div
@@ -51,6 +52,7 @@ export default function Hero({
             <div
               className="  aspect-1 bg-[url('https://source.unsplash.com/random')] bg-slate-600 w-full rounded-full
             relative"
+              style={{ backgroundImage: "url('" + featuredimage + "')" }}
             >
               <div className="bg-primary-default/60  h-24 w-24 rounded-full absolute md:top-20 md:right-0 -top-5 left-[15%] md:left-[85%]"></div>
               <div className=" h-24 w-24 rounded-full absolute top-3 right-[15%] md:top-[70%] md:left-0 overflow-hidden flex gap-1 rotate-45">

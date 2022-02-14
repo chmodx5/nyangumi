@@ -6,6 +6,7 @@ import PricingBlock from "../../components/Blocks/Pricing/PricingBlock";
 import Hero from "../../components/Blocks/Hero/Hero";
 import BlogBlock from "../../components/Blocks/Blog/BlogBlock";
 import DeveloperPortfolioLayout from "../../components/layout/DeveloperPortfolioLayout";
+import ImageContainer from "../../components/General/ImageContainer";
 // import herobg from "./../../public/hero-bg.svg";
 
 function Home() {
@@ -16,11 +17,13 @@ function Home() {
         title="w. onesmas"
         subtitle="a fullstack developer"
         desc="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod deserunt illo asperiores tempora, dolor repellendus repellate  dolor repellendus repellate  dolor repellendus repellate "
-        buttonlink="/"
+        buttonlink="/DeveloperPortfolio/Portfolio"
         buttontext="discover more"
-        bgimage={"/public/hero-bg.svg"}
+        bgimage={"./hero-bg.svg"}
+        featuredimage={"https://source.unsplash.com/random"}
       />
       <ServicesBlock />
+      <ImageContainer src="https://source.unsplash.com/random" alt="ffdf" />
       <AboutBlockWithSliders />
       <PortfolioBlock />
       <PricingBlock />
