@@ -1,10 +1,10 @@
 import React from "react";
-import AboutBlockWithSliders from "../../Components/Blocks/About/AboutBlockWithSliders";
-import ServicesBlock from "../../Components/Blocks/Services/ServicesBlock";
-import PortfolioBlock from "../../Components/Blocks/Portfolio/PortfolioBlock";
-import PricingBlock from "../../Components/Blocks/Pricing/PricingBlock";
-import Hero from "../../Components/Blocks/Hero/Hero";
-import BlogBlock from "../../components/Blocks/Blog/BlogBlock";
+import AboutBlockWithSliders from "./../../components/Blocks/About/AboutBlockWithSliders";
+import ServicesBlock from "./../../components/Blocks/Services/ServicesBlock";
+import PortfolioBlock from "./../../components/Blocks/Portfolio/PortfolioBlock";
+import PricingBlock from "./../../components/Blocks/Pricing/PricingBlock";
+import Hero from "../../components/Blocks/Hero/Hero";
+import BlogBlock from "./../../components/Blocks/Blog/BlogBlock";
 import DeveloperPortfolioLayout from "./../../components/layout/DeveloperPortfolioLayout";
 
 function Home() {
