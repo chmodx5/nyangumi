@@ -6,6 +6,7 @@ import PricingBlock from "../../components/Blocks/Pricing/PricingBlock";
 import Hero from "../../components/Blocks/Hero/Hero";
 import BlogBlock from "../../components/Blocks/Blog/BlogBlock";
 import DeveloperPortfolioLayout from "../../components/layout/DeveloperPortfolioLayout";
+// import herobg from "./../../public/hero-bg.svg";
 
 function Home() {
   return (
@@ -17,6 +18,7 @@ function Home() {
         desc="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod deserunt illo asperiores tempora, dolor repellendus repellate  dolor repellendus repellate  dolor repellendus repellate "
         buttonlink="/"
         buttontext="discover more"
+        bgimage={"/public/hero-bg.svg"}
       />
       <ServicesBlock />
       <AboutBlockWithSliders />

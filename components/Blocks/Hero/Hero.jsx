@@ -8,9 +8,13 @@ export default function Hero({
   subtitle,
   buttonlink,
   buttontext,
+  bgimage,
 }) {
   return (
-    <div className="h-auto md:h-screen  bg-[url('https:source.unsplash.com/random')] bg-fixed bg-cover bg-center bg-no-repeat">
+    <div
+      className={`h-auto md:h-screen   bg-fixed bg-cover bg-center bg-no-repeat"`}
+      style={{ backgroundImage: "url('" + bgimage + "')" }}
+    >
       <div className="bg-gray-900/80  w-full h-full">
         <div className="mycontainer mx-auto grid grid-cols-12 h-full w-full">
           <div className="order-2 md:order-1 col-span-12 md:col-span-7 flex items-center h-full w-full">

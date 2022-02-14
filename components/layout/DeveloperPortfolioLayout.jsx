@@ -10,8 +10,8 @@ export default function DeveloperPortfolioLayout({ children }) {
         <Navbar
           logo={
             <span>
-              <span className="text-primary-default">Someone</span>
-              <span>awesome</span>
+              <span className="text-primary-default">w. </span>
+              <span>Onesmas</span>
             </span>
           }
           navitems={
