@@ -67,7 +67,48 @@ function Home() {
           },
         ]}
       />
-      <PortfolioBlock />
+      <PortfolioBlock
+        subtitle="portfolios"
+        title="my latest works"
+        portfolioitems={[
+          {
+            category: "branding",
+            title: "Someone Else",
+            img: "https://source.unsplash.com/cauCwvTkHLM",
+            link: "/",
+          },
+          {
+            category: "design",
+            title: "waste board",
+            img: "https://source.unsplash.com/AGZAliGQmP4",
+            link: "/",
+          },
+          {
+            category: "development",
+            title: "disastrous elated",
+            img: "https://source.unsplash.com/Da0pdCekeUs",
+            link: "/",
+          },
+          {
+            category: "development",
+            title: "library scent",
+            img: "https://source.unsplash.com/RDolnHtjVCY",
+            link: "/",
+          },
+          {
+            category: "design",
+            title: "flight lacking",
+            img: "https://source.unsplash.com/HI6gy-p-WBI",
+            link: "/",
+          },
+          {
+            category: "design",
+            title: "finger licking",
+            img: "https://source.unsplash.com/KDdNjUQwzSw",
+            link: "/",
+          },
+        ]}
+      />
     </>
   );
 }
