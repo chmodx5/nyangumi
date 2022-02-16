@@ -16,7 +16,7 @@ export default function PortfolioBlock({ subtitle, title, portfolioitems }) {
               className="col-span-12 sm:col-span-6 md:col-span-4"
             >
               <PortfolioItem
-                styleSix
+                styleTwo
                 key={index}
                 category={item.category}
                 title={item.title}
