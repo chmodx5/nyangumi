@@ -9,6 +9,7 @@ export default function PortfolioBlock({ subtitle, title, portfolioitems }) {
         <HeadingWithEffect title={title} large centered subtitle={subtitle} />
         <br />
         <br />
+
         <div className="grid grid-cols-12 gap-12 ">
           {portfolioitems.map((item, index) => (
             <div

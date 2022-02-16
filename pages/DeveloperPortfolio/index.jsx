@@ -4,7 +4,7 @@ import ServicesBlock from "../../components/Blocks/Services/ServicesBlock";
 import PortfolioBlock from "../../components/Blocks/Portfolio/PortfolioBlock";
 import Hero from "../../components/Blocks/Hero/Hero";
 import DeveloperPortfolioLayout from "../../components/layout/DeveloperPortfolioLayout";
-// import BlogBlock from "../../components/Blocks/Blog/BlogBlock";
+import BlogBlock from "../../components/Blocks/Blog/BlogBlock";
 // import PricingBlock from "../../components/Blocks/Pricing/PricingBlock";
 // import ImageContainer from "../../components/General/ImageContainer";
 // import herobg from "./../../public/hero-bg.svg";
@@ -109,6 +109,7 @@ function Home() {
           },
         ]}
       />
+      <BlogBlock />
     </>
   );
 }

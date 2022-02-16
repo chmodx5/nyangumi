@@ -2,8 +2,19 @@ import React from "react";
 import Button from "../../General/Button";
 import HeadingWithEffect from "../../General/HeadingWithEffect";
 import BlogPostCard from "./BlogPostCard";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function BlogBlock() {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows: false,
+  };
   return (
     <div className="py-20">
       <div className="container mx-auto grid grid-cols-12 gap-5">
@@ -28,14 +39,10 @@ export default function BlogBlock() {
           </div>
         </div>
         <div className="col-span-8">
-          <div className="grid grid-cols-12 gap-5">
-            <div className="col-span-6">
-              <BlogPostCard />
-            </div>
-            <div className="col-span-6">
-              <BlogPostCard />
-            </div>
-          </div>
+          <Slider {...settings}>
+            <BlogPostCard /> <BlogPostCard /> <BlogPostCard /> <BlogPostCard />
+            <BlogPostCard /> <BlogPostCard />
+          </Slider>
         </div>
       </div>
     </div>
