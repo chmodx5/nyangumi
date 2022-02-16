@@ -52,7 +52,7 @@ export default function PortfolioBlock() {
         />
         <br />
         <br />
-        <div className="grid grid-cols-12 gap-6 ">
+        <div className="grid grid-cols-12 gap-12 ">
           {portfolioItems.map((item, index) => (
             <div
               key={index}

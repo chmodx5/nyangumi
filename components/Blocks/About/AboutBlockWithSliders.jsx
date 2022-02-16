@@ -3,33 +3,36 @@ import HeadingWithEffect from "../../General/HeadingWithEffect";
 import Button from "../../General/Button";
 import AboutSlider from "./AboutSlider";
 
-export default function AboutBlockWithSliders() {
+export default function AboutBlockWithSliders({
+  subtitle,
+  title,
+  description,
+  buttontext,
+  buttonlink,
+  sliders,
+}) {
   return (
     <div className="py-20 px-6 md:px-0">
       <div className="container mx-auto">
         <div className="grid grid-cols-12 gap-5">
           <div className="col-span-12 md:col-span-6">
-            <HeadingWithEffect
-              large
-              title="I’m a Passionate Expert Web Developer From USA"
-              subtitle="about me"
-            />
+            <HeadingWithEffect large title={title} subtitle={subtitle} />
             <br /> <br />
-            <div>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim,
-              quaerat libero officia quia nostrum, magnam quis tempore amet, ex
-              ea adipisci cum facilis atque quibusdam. Alias mollitia quidem
-              laboriosam quibusdam?
-            </div>
+            <div>{description}</div>
             <br />
             <br />
-            <Button link="/" text="donwload cv" />
+            <Button link={buttonlink} text={buttontext} />
           </div>
-          <div className="col-span-12 md:col-span-6">
-            <AboutSlider title="UI/UX Design" progress={90} />
-            <AboutSlider title="Branding" progress={50} />
-            <AboutSlider title="E-commerce" progress={80} />
-            <AboutSlider title="Web Developement" progress={10} />
+          <div className="col-span-12 md:col-span-6 items-center flex">
+            <div className="w-full">
+              {sliders.map((slider, index) => (
+                <AboutSlider
+                  key={index}
+                  title={slider.title}
+                  progress={slider.progress}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </div>

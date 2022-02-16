@@ -11,7 +11,7 @@ export default function DeveloperPortfolioLayout({ children }) {
           logo={
             <span>
               <span className="text-primary-default">w. </span>
-              <span>Onesmas</span>
+              <span>someone</span>
             </span>
           }
           navitems={

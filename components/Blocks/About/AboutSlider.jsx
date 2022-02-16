@@ -10,7 +10,7 @@ export default function AboutSlider({ title, progress }) {
 
       <div className="mt-2 w-full bg-gray-900">
         <div
-          className={`h-2 bg-primary-default `}
+          className={`h-1 bg-primary-default `}
           style={{ width: progress + "%" }}
         ></div>
       </div>
