@@ -3,120 +3,129 @@ import DeveloperPortfolioLayout from "../../components/layout/DeveloperPortfolio
 import PortfolioBlock from "./../../components/Blocks/Portfolio/PortfolioBlock";
 import PortfolioItem from "./../../components/Blocks/Portfolio/PortfolioItem";
 
-import Head from "next/head";
+const items = [
+  {
+    category: "branding",
+    title: "Someone Else",
+    img: "https://source.unsplash.com/cauCwvTkHLM",
+    link: "/",
+  },
+  {
+    category: "design",
+    title: "waste board",
+    img: "https://source.unsplash.com/AGZAliGQmP4",
+    link: "/",
+  },
+  {
+    category: "development",
+    title: "disastrous elated",
+    img: "https://source.unsplash.com/Da0pdCekeUs",
+    link: "/",
+  },
+  {
+    category: "development",
+    title: "library scent",
+    img: "https://source.unsplash.com/RDolnHtjVCY",
+    link: "/",
+  },
+  {
+    category: "design",
+    title: "flight lacking",
+    img: "https://source.unsplash.com/HI6gy-p-WBI",
+    link: "/",
+  },
+  {
+    category: "design",
+    title: "finger licking",
+    img: "https://source.unsplash.com/KDdNjUQwzSw",
+    link: "/",
+  },
+];
 
 export default function Portfolio() {
-  // init one ref to store the future isotope object
-  const isotope = useRef();
-  // store the filter keyword in a state
-  const [filterKey, setFilterKey] = useState("*");
+  const [filters, setFilters] = useState("");
 
-  // initialize an Isotope object with configs
-  useEffect(() => {
-    isotope.current = new Isotope(".filter-container", {
-      itemSelector: ".filter-item",
-      layoutMode: "fitRows",
+  //getting categories from items and filtering them to ensure there are no duplicates
+  const findDuplicates = (myarray) => {
+    let uniqueArray = myarray.filter((elem, pos, arr) => {
+      return arr.indexOf(elem) == pos;
     });
-    // cleanup
-    return () => isotope.current.destroy();
-  }, []);
+    return uniqueArray;
+  };
+  let filteredcategories = findDuplicates(items.map((item) => item.category));
 
-  // handling filter key change
-  useEffect(() => {
-    filterKey === "*"
-      ? isotope.current.arrange({ filter: `*` })
-      : isotope.current.arrange({ filter: `.${filterKey}` });
-  }, [filterKey]);
-
-  const handleFilterKeyChange = (key) => () => setFilterKey(key);
-  let portfolioitems = [
-    {
-      filtercategory: "Web",
-      category: "Web",
-    },
-    {
-      filtercategory: "Web",
-      category: "Web",
-    },
-    {
-      filtercategory: "fruits",
-      category: "Web",
-    },
-    {
-      filtercategory: "fruits",
-      category: "Web",
-    },
-    {
-      filtercategory: "Web",
-      category: "Web",
-    },
-    {
-      filtercategory: "Web",
-      category: "Web",
-    },
-  ];
   return (
     <>
-      <Head>
-        <script
-          type="text/javascript"
-          src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"
-        ></script>
-      </Head>
       <div>
-        <>
-          <ul>
-            <li onClick={handleFilterKeyChange("*")}>Show Both</li>
-            <li onClick={handleFilterKeyChange("vege")}>Show Veges</li>
-            <li onClick={handleFilterKeyChange("fruit")}>Show Fruits</li>
-          </ul>
-          <hr />
-          <ul className="filter-container mycontainer flex ">
-            {Array.from({ length: 10 }, (_, i) => (
-              <div className="filter-item vege w-3/12  inline-block p-3">
-                <span>Cucumber</span>
-                <PortfolioItem
-                  styleTwo
-                  category="x"
-                  title="item"
-                  img="https://source.unsplash.com/random/400x400"
-                  link="/"
-                />
-              </div>
+        <div className="mycontainer">
+          <div className="py-4">
+            <button
+              className="px-3 py-3 hover:text-primary-default uppercase"
+              onClick={() => {
+                setFilters("");
+              }}
+            >
+              all
+            </button>
+            {filteredcategories.map((item, index) => (
+              <button
+                key={index}
+                onClick={() => {
+                  setFilters(item);
+                }}
+                className="px-3 py-3 hover:text-primary-default uppercase"
+              >
+                {item}
+              </button>
             ))}
-
-            <div className="filter-item  fruit  w-3/12 p-3">
-              <span>Apple</span>
-              <PortfolioItem
-                styleTwo
-                category="x"
-                title="item"
-                img="https://source.unsplash.com/random/400x400"
-                link="/"
-              />
-            </div>
-            <div className="filter-item fruit  w-3/12 p-3">
-              <span>Orange</span>
-              <PortfolioItem
-                styleTwo
-                category="x"
-                title="item"
-                img="https://source.unsplash.com/random/400x400"
-                link="/"
-              />
-            </div>
-            <div className="filter-item fruit vege  w-3/12 p-3">
-              <span>Tomato</span>
-              <PortfolioItem
-                styleTwo
-                category="x"
-                title="item"
-                img="https://source.unsplash.com/random/400x400"
-                link="/"
-              />
-            </div>
-          </ul>
-        </>
+          </div>
+          <div className="grid grid-cols-3 gap-6">
+            {filters == "" ? (
+              <>
+                {items.map((item, index) => (
+                  <div
+                    key={index}
+                    onClick={() => {
+                      setFilters(item.category);
+                    }}
+                  >
+                    <PortfolioItem
+                      styleTwo
+                      category={item.category}
+                      title={item.title}
+                      img={item.img}
+                      link={item.link}
+                    />
+                  </div>
+                ))}
+              </>
+            ) : (
+              <>
+                {items.map((item, index) => (
+                  <>
+                    {item.category == filters && (
+                      <div
+                        key={index}
+                        onClick={() => {
+                          setFilters(item.category);
+                        }}
+                      >
+                        <PortfolioItem
+                          styleTwo
+                          category={item.category}
+                          title={item.title}
+                          img={item.img}
+                          link={item.link}
+                        />
+                      </div>
+                    )}
+                  </>
+                ))}
+              </>
+            )}
+            <p className=" text-fuchsia-700">{filters}</p>
+          </div>
+        </div>
 
         <PortfolioBlock
           subtitle="portfolios"
