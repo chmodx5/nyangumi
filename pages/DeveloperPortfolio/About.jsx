@@ -1,11 +1,13 @@
 import React from "react";
 import AboutBlockOne from "../../components/Blocks/About/AboutBlockOne";
+import Breadcrumbs from "../../components/Blocks/Breadcrumbs/Breadcrumbs";
 import ServicesBlock from "../../components/Blocks/Services/ServicesBlock";
 import DeveloperPortfolioLayout from "../../components/layout/DeveloperPortfolioLayout";
 
 export default function About() {
   return (
     <div>
+      <Breadcrumbs title="about" />
       <AboutBlockOne />
       <ServicesBlock
         title="services"
