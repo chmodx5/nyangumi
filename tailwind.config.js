@@ -10,10 +10,13 @@ module.exports = {
         primary: {
           default: "#d00000",
           light: "#9d0208",
+          dark: "#d00000",
         },
         secondary: {
           default: "#ffd700",
+          dark: "#ffd700",
         },
+        darkbackground: "#070416",
       },
       fontFamily: {
         sans: ["Montserrat", "sans-serif"],

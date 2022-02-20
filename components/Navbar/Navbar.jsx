@@ -4,7 +4,7 @@ import ThemeSwitch from "../General/ThemeSwitch";
 
 function Header({ logo, navitems }) {
   return (
-    <nav className=" shadow-lg fixed bg-white dark:bg-red-900 w-full z-50 ">
+    <nav className=" shadow-lg fixed bg-white dark:bg-darkbackground dark:text-white w-full z-50 ">
       <div className="container mx-auto px-2 sm:px-6 md:px-0 ">
         <div className=" h-20 flex items-center justify-center sm:items-stretch sm:justify-between">
           {/* page logo */}

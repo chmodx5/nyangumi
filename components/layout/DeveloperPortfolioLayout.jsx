@@ -10,7 +10,7 @@ export default function DeveloperPortfolioLayout({ children }) {
       <Head>
         <title>Dev layout</title>
       </Head>
-      <div className="h-screen flex flex-col justify-between ">
+      <div className="min-h-screen flex flex-col justify-between  dark:bg-darkbackground dark:text-white ">
         <header>
           <Navbar
             logo={
@@ -28,7 +28,6 @@ export default function DeveloperPortfolioLayout({ children }) {
                   text="Portfolio"
                 />
                 <NavLink link="/DeveloperPortfolio/Contact" text="Contact" />
-                <NavLink link="/DeveloperPortfolio/Blog" text="Blog" />
               </>
             }
           />
