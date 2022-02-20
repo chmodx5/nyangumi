@@ -15,15 +15,17 @@ export default function AboutBlockWithSliders({
     <div className="py-20 px-6 md:px-0">
       <div className="container mx-auto">
         <div className="grid grid-cols-12 gap-5">
-          <div className="col-span-12 md:col-span-6">
-            <HeadingWithEffect large title={title} subtitle={subtitle} />
+          <div className="col-span-12 md:col-span-7">
+            <div className="w-full md:w-3/4">
+              <HeadingWithEffect large title={title} subtitle={subtitle} />
+            </div>
             <br /> <br />
-            <div>{description}</div>
+            <div>{description} </div>
             <br />
             <br />
             <Button link={buttonlink} text={buttontext} />
           </div>
-          <div className="col-span-12 md:col-span-6 items-center flex">
+          <div className="col-span-12 md:col-span-5 items-center flex">
             <div className="w-full">
               {sliders.map((slider, index) => (
                 <AboutSlider

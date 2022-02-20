@@ -4,7 +4,7 @@ import ServicesBlock from "../../components/Blocks/Services/ServicesBlock";
 import PortfolioBlock from "../../components/Blocks/Portfolio/PortfolioBlock";
 import Hero from "../../components/Blocks/Hero/Hero";
 import DeveloperPortfolioLayout from "../../components/layout/DeveloperPortfolioLayout";
-import BlogBlock from "../../components/Blocks/Blog/BlogBlock";
+// import BlogBlock from "../../components/Blocks/Blog/BlogBlock";
 // import PricingBlock from "../../components/Blocks/Pricing/PricingBlock";
 // import ImageContainer from "../../components/General/ImageContainer";
 // import herobg from "./../../public/hero-bg.svg";
@@ -25,7 +25,7 @@ function Home() {
       <AboutBlockWithSliders
         subtitle="about me"
         title="i am a passionate expert web developer from kenya"
-        description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod deserunt illo asperiores tempora, dolor repellendus repellate  dolor repellendus repellate  dolor repellendus repellate"
+        description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod deserunt illo asperiores tempora, dolor repellendus repellate  dolor repellendus repellate  dolor repellendus repellate Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod deserunt illo asperiores tempora, dolor repellendus repellate  dolor repellendus repellate  dolor repellendus repellateLorem, ipsum dolor sit amet consectetur adipisicing elit. Quod deserunt illo asperiores tempora, dolor repellendus repellate  dolor repellendus repellate  dolor repellendus repellate"
         buttonlink="/0"
         buttontext="donwload cv"
         sliders={[
@@ -109,7 +109,6 @@ function Home() {
           },
         ]}
       />
-      <BlogBlock />
     </>
   );
 }
