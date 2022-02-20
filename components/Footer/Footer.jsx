@@ -15,9 +15,9 @@ import FooterContactListItem from "./FooterContactListItem";
 
 function Footer() {
   return (
-    <footer>
-      <div className="bg-gray-800 text-white">
-        <div className="container mx-auto py-16 px-6 sm:px-0">
+    <footer className=" ">
+      <div className=" dark:bg-darkbackground dark:text-white">
+        <div className="container mx-auto py-16 px-6 sm:px-0 border-y border-gray-300 dark:border-gray-500">
           <div className="grid grid-cols-12 gap-5 ">
             <div className="col-span-12 md:col-span-4">
               <h1 className=" uppercase text-2xl font-bold mb-8">
@@ -97,7 +97,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="bg-gray-900 text-white py-8">
+      <div className=" dark:bg-darkbackground py-8">
         <div className="container mx-auto">
           <div className="grid grid-cols-12 gap-y-5">
             <div className=" col-span-12 md:col-span-4 flex md:justify-start justify-center">

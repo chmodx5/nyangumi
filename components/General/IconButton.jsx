@@ -8,7 +8,7 @@ function IconButton({ link, icon }) {
       target="_blank"
       rel="noreferrer"
     >
-      {icon}
+      <span className="text-white">{icon}</span>
     </a>
   );
 }
