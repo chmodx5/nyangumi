@@ -13,7 +13,7 @@ export default function Home() {
     {
       img: "https://source.unsplash.com/4OyLq2yN9u0",
       title: "developer portfolio",
-      link: "/DeveloperPorfolio",
+      link: "/DeveloperPortfolio",
     },
     {
       img: "https://source.unsplash.com/4OyLq2yN9u0",
