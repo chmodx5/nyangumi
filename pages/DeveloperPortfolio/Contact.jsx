@@ -8,8 +8,8 @@ import { MdOutlineEmail, MdPhone, MdLocationPin } from "react-icons/md";
 
 function ContactInfo({ icon, children }) {
   return (
-    <div className="flex gap-8 items-center py-2 mb-4">
-      <span className="text-3xl">{icon}</span>
+    <div className="flex gap-8 items-center py-2 mb-4 group">
+      <span className="text-3xl group-hover:text-primary-default">{icon}</span>
 
       <div>{children}</div>
     </div>
@@ -30,14 +30,74 @@ export default function Contact() {
             </ContactInfo>
             <ContactInfo icon={<MdPhone />}>
               <ul>
-                <li>0746405792</li>
-                <li>0106856867</li>
+                <li className="hover:text-primary-default">
+                  <a href="tel:0746405792">0746405792</a>
+                </li>
+                <li className="hover:text-primary-default">
+                  <a href="tel:0106856867">0106856867</a>
+                </li>
               </ul>
             </ContactInfo>
-            <ContactInfo icon={<MdOutlineEmail />}> </ContactInfo>
-            <ContactInfo icon={<ImWhatsapp />}> </ContactInfo>
-            <ContactInfo icon={<FaGithub />}> </ContactInfo>
-            <ContactInfo icon={<FaLinkedin />}> </ContactInfo>
+            <ContactInfo icon={<MdOutlineEmail />}>
+              <ul>
+                <li>
+                  <a
+                    className="hover:text-primary-default"
+                    href="mailto:onesmaswanjala2021@gmail.com"
+                  >
+                    <p>onesmaswanjala2021@gmail.com</p>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="hover:text-primary-default"
+                    href="mailto:wafulawanjala@hotmail.com"
+                  >
+                    <p>wafulawanjala@hotmail.com</p>
+                  </a>
+                </li>
+              </ul>
+            </ContactInfo>
+            <ContactInfo icon={<ImWhatsapp />}>
+              <ul>
+                <li>
+                  <a
+                    className="hover:text-primary-default"
+                    href="https://api.whatsapp.com/send?phone=+254746405792"
+                  >
+                    <p>0746405792</p>
+                  </a>
+                </li>
+              </ul>
+            </ContactInfo>
+            <ContactInfo icon={<FaGithub />}>
+              <ul>
+                <li>
+                  <a
+                    className="hover:text-primary-default"
+                    href="https://github.com/chmodx5"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <p>@chmodx5</p>
+                  </a>
+                </li>
+              </ul>
+            </ContactInfo>
+            <ContactInfo icon={<FaLinkedin />}>
+              <ul>
+                <li>
+                  <a
+                    className="hover:text-primary-default"
+                    href="https://www.linkedin.com/in/onesmas-wanjala-10127b216/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <p>onesmas wanjala</p>
+                  </a>
+                </li>
+              </ul>
+            </ContactInfo>
           </div>
           <div className="col-span-8">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque
