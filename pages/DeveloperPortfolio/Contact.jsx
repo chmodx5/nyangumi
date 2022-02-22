@@ -24,7 +24,7 @@ export default function Contact() {
         <div className="mycontainer py-20  ">
           <HeadingWithEffect large title="contact info" />
           <br />
-          <div className=" grid grid-cols-3 gap-8">
+          <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             <ContactInfo icon={<ImLocation />}>
               <p className="group-hover:text-white">Juja, kenya</p>
             </ContactInfo>
