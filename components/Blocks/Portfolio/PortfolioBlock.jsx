@@ -1,6 +1,7 @@
 import React from "react";
 import HeadingWithEffect from "../../General/HeadingWithEffect";
 import PortfolioItem from "./PortfolioItem";
+import Link from "next/link";
 
 export default function PortfolioBlock({ subtitle, title, portfolioitems }) {
   return (
@@ -26,6 +27,14 @@ export default function PortfolioBlock({ subtitle, title, portfolioitems }) {
               />
             </div>
           ))}
+        </div>
+
+        <div className="pt-10">
+          <p className=" text-center">
+            <Link href="/DeveloperPortfolio/Portfolio">
+              <a className="btn">more</a>
+            </Link>
+          </p>
         </div>
       </div>
     </div>

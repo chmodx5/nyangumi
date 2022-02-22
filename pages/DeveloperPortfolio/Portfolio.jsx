@@ -2,6 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import IsotopeGrid from "../../components/Blocks/Portfolio/IsotopeGrid";
 import DeveloperPortfolioLayout from "../../components/layout/DeveloperPortfolioLayout";
 import Breadcrumbs from "../../components/Blocks/Breadcrumbs/Breadcrumbs";
+import Link from "next/link";
 
 export default function Portfolio() {
   //getting categories from items and filtering them to ensure there are no duplicates
@@ -11,7 +12,6 @@ export default function Portfolio() {
       <div>
         <Breadcrumbs title="Portfolio" />
         <IsotopeGrid />
-        <div className="mycontainer"></div>
       </div>
     </>
   );

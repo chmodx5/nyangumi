@@ -22,7 +22,7 @@ export default function AboutBlockOne() {
             projects going to use a passage of lorem Ipsum.
           </p>
           <div className=" border-primary-default md:aspect-1  md:w-2/5 mt-12 border-[12px] flex justify-center md:justify-end items-center  ">
-            <div className="  bg-white py-6 w-full text-center md:p-4 md:-mr-24 md:flex">
+            <div className="  bg-white dark:bg-darkbackground py-6 w-full text-center md:p-4 md:-mr-24 md:flex">
               <h1 className=" font-black text-6xl">25+</h1>
               <div className="capitalize font-bold text-xl">
                 <p>years</p>
